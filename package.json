@@ -1,0 +1,39 @@
+{
+  "name": "ai-codex",
+  "version": "1.0.0",
+  "description": "Generate a compact codebase index for AI assistants -- saves 50K+ tokens per conversation",
+  "main": "src/generate-codex.ts",
+  "bin": {
+    "ai-codex": "src/generate-codex.ts"
+  },
+  "scripts": {
+    "generate": "tsx src/generate-codex.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "ai",
+    "codex",
+    "codebase-index",
+    "claude",
+    "chatgpt",
+    "llm",
+    "token-savings",
+    "developer-tools",
+    "nextjs",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
