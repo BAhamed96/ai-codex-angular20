@@ -1,12 +1,9 @@
-# Pages (generated 2026-04-02)
-# 9 pages. [client]=client component, [server]=server component.
+# Angular Routes (generated 2026-04-03)
+# 6 routes. [lazy]=lazy-loaded, guard:/resolve:=route metadata.
 
-[server]   /                                                  HomePage
-[server]   /about                                             AboutPage
-[client]   /cart                                               CartPage
-[client]   /checkout                                           CheckoutPage
-[server]   /orders                                             OrdersPage
-[client]   /orders/:id                                         OrderDetailPage
-[server]   /products                                           ProductsPage
-[client]   /products/:id                                       ProductDetailPage
-[client]   /account                                            AccountPage
+/                                                        HomePageComponent
+/products                                                ProductsPageComponent
+/products/:id                                            ProductDetailPageComponent [resolve:productResolver]
+/account                                                 AccountShellComponent [guard:authGuard]
+/account/orders                                          OrdersPageComponent
+/admin                                                   loadChildren ./admin/admin.routes#ADMIN_ROUTES [lazy,guard:adminGuard]

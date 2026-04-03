@@ -1,7 +1,7 @@
 {
   "name": "ai-codex",
   "version": "1.0.1",
-  "description": "Generate a compact codebase index for AI assistants -- saves 50K+ tokens per conversation",
+  "description": "Generate a compact Angular 20 + NestJS codebase index for AI assistants -- saves tokens on every conversation",
   "main": "src/generate-codex.ts",
   "bin": {
     "ai-codex": "src/generate-codex.ts"
@@ -19,7 +19,11 @@
     "llm",
     "token-savings",
     "developer-tools",
-    "nextjs",
+    "angular",
+    "angular20",
+    "nestjs",
+    "nest",
+    "prisma",
     "typescript"
   ],
   "author": "",
@@ -27,6 +31,9 @@
   "dependencies": {
     "tsx": "^4.7.0",
     "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5"
   },
   "engines": {
     "node": ">=18"

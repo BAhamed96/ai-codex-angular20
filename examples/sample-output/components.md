@@ -1,20 +1,14 @@
-# Components (generated 2026-04-02)
-# (c)=client component. UI primitives (shadcn/radix) omitted.
+# Components (generated 2026-04-03)
+# (s)=standalone. in=inputs, out=outputs.
 
-## components
-(c) CartDrawer  items, onRemove, onCheckout
-    Footer
-(c) Header  user, cartCount
-(c) SearchBar  onSearch, placeholder
-    Logo
+## pages
+(s) HomePageComponent  <app-home-page>
+(s) ProductsPageComponent  <app-products-page>
 
-## app/products
-(c) ProductCard  product, onAddToCart
-(c) ProductFilters  categories, onFilter
-(c) ProductGrid  products, loading
-    PriceDisplay  amount, currency, locale
+## features/products/ui
+(s) ProductCardComponent  <app-product-card>  in: product, compact  out: addToCart
+(s) ProductFiltersComponent  <app-product-filters>  in: selectedCategory  out: categoryChange
 
-## app/orders
-(c) OrderTimeline  events
-    OrderSummary  order
-(c) RefundDialog  orderId, onRefund
+## shared/layout
+(s) AppShellComponent  <app-shell>
+    HeaderComponent  <app-header>  in: user

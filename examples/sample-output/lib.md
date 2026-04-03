@@ -1,24 +1,18 @@
-# Library Exports (generated 2026-04-02)
-# fn=function, class=class. Type-only files omitted.
+# Shared Exports (generated 2026-04-03)
+# fn=function, class=class. Angular/Nest framework files omitted.
 
-## lib
-cart-utils.ts
-  fn calculateTotal
-  fn applyDiscount
+## frontend/src/app/shared/utils
+price.ts
   fn formatPrice
-  fn getCartItemCount
+  fn formatCurrencyCode
 
-auth.ts
-  fn validateSession
-  fn hashPassword
-  fn verifyToken
+date.ts
+  fn formatRelativeDate
 
-stripe.ts  fn createPaymentIntent
-email.ts  fn sendOrderConfirmation
-db.ts  fn getDbClient
-validation.ts  fn validateProductInput
+## backend/src/common
+pagination.ts
+  fn buildPageRequest
+  fn buildPageMeta
 
-## lib/hooks
-# 4 single-export files:
-useCart:useCart  |  useAuth:useAuth  |  useProducts:useProducts
-useDebounce:useDebounce
+errors.ts
+  class DomainError
