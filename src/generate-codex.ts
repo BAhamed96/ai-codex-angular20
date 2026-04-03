@@ -478,10 +478,11 @@ function detectPrismaSchema(config: Config, backendRoot: string | null): string 
     ? [resolveProjectPath(config.schema)]
     : uniqueStrings([
         backendRoot ? path.join(backendRoot, 'prisma', 'schema.prisma') : '',
+        backendRoot ? path.join(backendRoot, 'prisma', 'schema', 'schema.prisma') : '',
         backendRoot ? path.join(backendRoot, 'schema.prisma') : '',
         path.join(ROOT, 'prisma', 'schema.prisma'),
-        path.join(ROOT, 'schema.prisma'),
         path.join(ROOT, 'prisma', 'schema', 'schema.prisma'),
+        path.join(ROOT, 'schema.prisma'),
       ]);
 
   for (const candidate of candidates) {
