@@ -1,18 +1,18 @@
 #!/usr/bin/env tsx
 /**
- * ai-codex — Generate a compact Angular 20 + NestJS index for AI assistants.
+ * ai-codex-angular20 — Generate a compact Angular 20 + NestJS index for AI assistants.
  *
  * Scans your repo and produces compact reference files that give AI coding
  * assistants instant context about your app structure, saving exploration time
  * at the start of each conversation.
  *
  * Usage:
- *   npx ai-codex
- *   npx ai-codex --output .claude/codex
- *   npx ai-codex --frontend-root frontend apps/web client --backend-root backend apps/api server
- *   npx ai-codex --include src/shared src/lib
- *   npx ai-codex --exclude dist coverage
- *   npx ai-codex --schema backend/prisma/schema.prisma
+ *   npx ai-codex-angular20
+ *   npx ai-codex-angular20 --output .claude/codex
+ *   npx ai-codex-angular20 --frontend-root frontend apps/web client --backend-root backend apps/api server
+ *   npx ai-codex-angular20 --include src/shared src/lib
+ *   npx ai-codex-angular20 --exclude dist coverage
+ *   npx ai-codex-angular20 --schema backend/prisma/schema.prisma
  *
  * Config file (codex.config.json):
  *   {
@@ -145,7 +145,7 @@ function parseArgs(): Config {
         break;
       case '--version':
       case '-v':
-        console.log('ai-codex v1.0.1');
+        console.log('ai-codex-angular20 v1.0.1');
         process.exit(0);
       case '--help':
       case '-h':
@@ -159,10 +159,10 @@ function parseArgs(): Config {
 
 function printHelp(): void {
   console.log(`
-ai-codex — Generate a compact Angular 20 + NestJS index for AI assistants
+ai-codex-angular20 — Generate a compact Angular 20 + NestJS index for AI assistants
 
 Usage:
-  npx ai-codex [options]
+  npx ai-codex-angular20 [options]
 
 Options:
   --output, -o <dir>          Output directory (default: .ai-codex)
@@ -1638,7 +1638,7 @@ function generateServices(framework: FrameworkInfo): string | null {
 // ---------------------------------------------------------------------------
 
 function main() {
-  console.log('\nai-codex -- Angular 20 + NestJS indexer for AI assistants\n');
+  console.log('\nai-codex-angular20 -- Angular 20 + NestJS indexer for AI assistants\n');
 
   const config = parseArgs();
   const framework = detectFramework(config);

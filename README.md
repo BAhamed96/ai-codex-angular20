@@ -1,4 +1,4 @@
-# ai-codex
+# ai-codex-angular20
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue.svg)](https://www.typescriptlang.org/)
@@ -15,20 +15,20 @@ AI coding assistants spend a large amount of context budget exploring a fresh re
 - walking Nest controllers to find HTTP endpoints
 - opening Prisma schema files to infer data relationships
 
-`ai-codex` precomputes that structure into a small set of Markdown files.
+`ai-codex-angular20` precomputes that structure into a small set of Markdown files.
 
 ## Quick Start
 
 Run it from your repo root:
 
 ```bash
-npx ai-codex
+npx ai-codex-angular20
 ```
 
 If your frontend and backend live in separate folders, you can point the generator explicitly:
 
 ```bash
-npx ai-codex --frontend-root frontend apps/web client --backend-root backend apps/api server
+npx ai-codex-angular20 --frontend-root frontend apps/web client --backend-root backend apps/api server
 ```
 
 The generator will use the first candidate that exists and matches the expected Angular or Nest shape.
@@ -53,12 +53,12 @@ Files that do not apply are skipped.
 ### CLI Flags
 
 ```bash
-npx ai-codex --output .claude/codex
-npx ai-codex --frontend-root frontend apps/web client
-npx ai-codex --backend-root backend apps/api server
-npx ai-codex --include frontend/src/app/shared backend/src/common
-npx ai-codex --exclude coverage dist .angular
-npx ai-codex --schema backend/prisma/schema.prisma
+npx ai-codex-angular20 --output .claude/codex
+npx ai-codex-angular20 --frontend-root frontend apps/web client
+npx ai-codex-angular20 --backend-root backend apps/api server
+npx ai-codex-angular20 --include frontend/src/app/shared backend/src/common
+npx ai-codex-angular20 --exclude coverage dist .angular
+npx ai-codex-angular20 --schema backend/prisma/schema.prisma
 ```
 
 ### Config File

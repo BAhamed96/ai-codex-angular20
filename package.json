@@ -1,10 +1,10 @@
 {
-  "name": "ai-codex",
+  "name": "ai-codex-angular20",
   "version": "1.0.1",
   "description": "Generate a compact Angular 20 + NestJS codebase index for AI assistants -- saves tokens on every conversation",
   "main": "src/generate-codex.ts",
   "bin": {
-    "ai-codex": "src/generate-codex.ts"
+    "ai-codex-angular20": "src/generate-codex.ts"
   },
   "scripts": {
     "generate": "tsx src/generate-codex.ts",
